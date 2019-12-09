@@ -1,0 +1,24 @@
+name: Azure Pages CI
+on: [push, pull_request]
+jobs:
+
+  azure_pages_job:
+
+    runs-on: ubuntu-latest
+
+    name: Build And Deploy
+
+    steps:
+
+    - uses: actions/checkout@v1
+    - shell: bash
+      run: |
+        npm install
+        npm run build
+        
+    - uses: miwebst/anotherdeploy@master
+      with:
+        azure_pages_contenthost: 'miwebstsslinux.azurewebsites.net'
+        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}           
+        app_artifact_location: 'dist'
+        api_artifact_location: ''
