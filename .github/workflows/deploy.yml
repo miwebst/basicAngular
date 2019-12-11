@@ -18,6 +18,7 @@ jobs:
         
     - uses: miwebst/anotherdeploy@master
       with:
-        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}           
+        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}
+        action: 'upload'         
         app_artifact_location: 'dist/testapp'
         api_artifact_location: ''
