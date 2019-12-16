@@ -19,7 +19,7 @@ jobs:
       run: |
         npm install
         npm run build
-    - uses: miwebst/anotherdeploy@master
+    - uses: joslinmicrosoft/staticsitesaction@master
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}
         action: 'upload'         
