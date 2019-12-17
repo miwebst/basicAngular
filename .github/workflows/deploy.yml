@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Azure Pages Close Pull Request Job
     steps:
-    - uses: miwebst/anotherdeploy@master
+    - uses: joslinmicrosoft/staticsitesaction@master
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}
         action: 'close'
