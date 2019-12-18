@@ -4,10 +4,9 @@ on:
     branches:
     - master
   pull_request:
-    types: [opened, synchronize, reopened, edited, closed]
+    types: [opened, synchronize, reopened, closed]
     branches:
     - master
-    - dev
 
 jobs:
   azure_pages_build_and_upload_job:
