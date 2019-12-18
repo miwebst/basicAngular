@@ -1,4 +1,4 @@
-# Testapp : Run 17 (testing canary)
+# Testapp : Run 18 (testing client changes)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
